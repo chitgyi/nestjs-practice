@@ -1,0 +1,12 @@
+{{#extend "layout"}}    
+
+    {{#content "head"}}
+        <title>POS APP</title>
+    {{/content}}
+
+    {{#content "body"}}
+        {{#each products as |product|}}
+            {{> products/productItem product=product }}
+        {{/each}}
+    {{/content}}
+{{/extend}}

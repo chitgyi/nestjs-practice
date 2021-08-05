@@ -1,0 +1,15 @@
+@url = http://localhost:3000
+
+POST {{url}}/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Product Two",
+    "detail": "Product Two Detail"
+}
+
+###
+
+GET {{url}}/products
+Accept: application/json
